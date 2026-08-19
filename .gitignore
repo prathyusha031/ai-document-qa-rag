@@ -1,0 +1,35 @@
+# Environment / secrets — NEVER commit these
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# ChromaDB persistent storage (regenerated at runtime)
+chroma_db/*
+!chroma_db/.gitkeep
+
+# Uploaded / generated data
+data/*
+!data/.gitkeep
+!data/sample_document.pdf
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Local virtual environment
+.venv
+
+# Local virtual environment
+.venv
