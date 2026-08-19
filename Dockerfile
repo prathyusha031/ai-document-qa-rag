@@ -21,4 +21,4 @@ RUN mkdir -p chroma_db data
 EXPOSE 8501
 
 # Start the application
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["sh", "-c", "streamlit run app.py --server.port=$PORT --server.address=0.0.0.0"]
